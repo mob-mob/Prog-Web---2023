@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scare=1.0">
+        <title>Practica CSS - Flexbox</title>
+    </head>
+    <style>
+        body {
+            font-family: monospace;
+            color: #EEEEEE;
+
+            background-color: #212121;
+        }
+
+        h1 {
+            text-align: center;
+            font-family: 'Agency FB';
+            font-size: 45px;
+        }
+
+        .item1{
+            background-color: #EC6557;
+            border: thin solid #D35A4D;
+            color: #212121;
+            padding: 1rem;
+        }
+        .item2{
+            background-color: #26C6DA;
+            border: thin solid #23AFC0;
+            color: #212121;
+            padding: 1rem;
+        }
+        .item3{
+            background-color: #FFB300;
+            border: thin solid #E7A200;
+            color: #212121;
+            padding: 1rem;
+        }
+
+        section{
+            background-color: #333333;
+        }
+
+        .contenedor1{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .contenedor2{
+            display: inline-flex;
+        }
+
+        .contenedor3{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .contenedor4{
+            display: inline-flex;
+            flex-direction: row-reverse;
+        }
+
+        .contenedor5{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contenedor6{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .contenedor7{
+            display: inline-flex;
+            flex-direction: column;
+        }
+
+        .contenedor8{
+            display: inline-flex;
+            flex-direction: column-reverse;
+        }
+
+        .contenedor9{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contenedor10{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .contenedor11{
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+        .contenedor12{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .contenedor13{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .contenedor14{
+            display: flex;
+            justify-content: center;
+        }
+
+        .contenedor15{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .contenedor16{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contenedor17{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .contenedor18{
+            display: flex;
+            align-items: flex-start;
+        }
+
+    </style>
+    <body>
+        <h1>Flex Box</h1>
+
+        <h3>Flex Box 1: display flex </h3>
+        <section class="contenedor1">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+        <section class="contenedor1">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 2: display inline-flex </h3>
+        <section class="contenedor2">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+        <section class="contenedor2">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 3: display flex + direction reverse </h3>
+        <section class="contenedor3">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 4: display inline-flex + direction reverse </h3>
+        <section class="contenedor4">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 5: display flex + direction colum </h3>
+        <section class="contenedor5">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 6: display flex + direction colum-reverse </h3>
+        <section class="contenedor6">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 7: display inline-flex + direction column </h3>
+        <section class="contenedor7">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 8: display inline-flex + direction reverse </h3>
+        <section class="contenedor8">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 9: display flex + wrap </h3>
+        <section class="contenedor9">
+            <article class="item1">Flex Item 1</article>
+            <article class="item1">Flex Item 2</article>
+            <article class="item1">Flex Item 3</article>
+            <article class="item1">Flex Item 4</article>
+            <article class="item1">Flex Item 5</article>
+            <article class="item1">Flex Item 6</article>
+            <article class="item1">Flex Item 7</article>
+            <article class="item1">Flex Item 8</article>
+            <article class="item1">Flex Item 9</article>
+            <article class="item1">Flex Item 10</article>
+            <article class="item1">Flex Item 11</article>
+            <article class="item1">Flex Item 12</article>
+            <article class="item1">Flex Item 13</article>
+            <article class="item1">Flex Item 14</article>
+            <article class="item1">Flex Item 15</article>
+            <article class="item1">Flex Item 16</article>
+            <article class="item1">Flex Item 17</article>
+            <article class="item1">Flex Item 18</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 10: display flex + nowrap </h3>
+        <section class="contenedor10">
+            <article class="item2">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item2">Flex Item 3</article>
+            <article class="item2">Flex Item 4</article>
+            <article class="item2">Flex Item 5</article>
+            <article class="item2">Flex Item 6</article>
+            <article class="item2">Flex Item 7</article>
+            <article class="item2">Flex Item 8</article>
+            <article class="item2">Flex Item 9</article>
+            <article class="item2">Flex Item 10</article>
+            <article class="item2">Flex Item 11</article>
+            <article class="item2">Flex Item 12</article>
+            <article class="item2">Flex Item 13</article>
+            <article class="item2">Flex Item 14</article>
+            <article class="item2">Flex Item 15</article>
+            <article class="item2">Flex Item 16</article>
+            <article class="item2">Flex Item 17</article>
+            <article class="item2">Flex Item 18</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 11: display flex + wrap-reverse </h3>
+        <section class="contenedor11">
+            <article class="item3">Flex Item 1</article>
+            <article class="item3">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+            <article class="item3">Flex Item 4</article>
+            <article class="item3">Flex Item 5</article>
+            <article class="item3">Flex Item 6</article>
+            <article class="item3">Flex Item 7</article>
+            <article class="item3">Flex Item 8</article>
+            <article class="item3">Flex Item 9</article>
+            <article class="item3">Flex Item 10</article>
+            <article class="item3">Flex Item 11</article>
+            <article class="item3">Flex Item 12</article>
+            <article class="item3">Flex Item 13</article>
+            <article class="item3">Flex Item 14</article>
+            <article class="item3">Flex Item 15</article>
+            <article class="item3">Flex Item 16</article>
+            <article class="item3">Flex Item 17</article>
+            <article class="item3">Flex Item 18</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 12: display flex + justify flex-start </h3>
+        <section class="contenedor12">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 13: display flex + justify flex-end </h3>
+        <section class="contenedor13">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 14: display flex + justify center </h3>
+        <section class="contenedor14">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 15: display flex + justify space-between </h3>
+        <section class="contenedor15">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 16: display flex + justify space-around </h3>
+        <section class="contenedor16">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+
+        <br><br><br>
+        <h3>Flex Box 17: display flex + justify space-evenly </h3>
+        <section class="contenedor17">
+            <article class="item1">Flex Item 1</article>
+            <article class="item2">Flex Item 2</article>
+            <article class="item3">Flex Item 3</article>
+        </section>
+    </body>
+</html>

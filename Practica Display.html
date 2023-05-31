@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scare=1.0">
+        <title>Practica CSS - Propiedades</title>
+    </head>
+    <style>
+        body {
+            font-family: "Century Gothic";
+            color: #eeeeee;
+
+            background: -webkit-linear-gradient(90deg, #121212 10%, #212121 90%);
+            background:    -moz-linear-gradient(90deg, #121212 10%, #212121 90%);
+            background:     -ms-linear-gradient(90deg, #121212 10%, #212121 90%);
+            background:      -o-linear-gradient(90deg, #121212 10%, #212121 90%);
+            background:         linear-gradient(90deg, #121212 10%, #212121 90%);
+
+            min-height: 30vh;
+        }
+        .header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;    
+        }
+        .header h1{
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right,#6C63FF, #F8A4D8) 1;
+
+            background: linear-gradient(to right,#6C63FF, #F8A4D8);
+            -webkit-background-clip: text;
+            color: transparent;
+
+            -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+        }
+        .content{
+            width: 70%;
+
+            float: left;
+            padding: 10px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap; 
+        }
+        .right {
+            width : 20%;
+            float : right;
+            margin : 10px;
+            padding : 10px;
+        }
+        .sub{ display: inline-block; } 
+        .title{ display: inline-flex; }
+        .title h2{
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+        }
+        .g1{ border: 2px solid #6C63FF; color: #6C63FF; }
+        .g2{ border: 2px solid #F8A4D8; color: #F8A4D8; }
+        .g3{ border: 2px solid #866AD4; color: #866AD4; }
+        .g4{ border: 2px solid #C98EE5; color: #C98EE5; }
+        h1{
+            margin: 10px;
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+        h2{
+            margin: 10px;
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+        h3{
+            margin: 10px;
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+        h4{
+            margin: 10px;
+            text-transform: uppercase;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+        p{
+            margin: 10px;
+            text-transform:inherit;
+            font-weight: 100;
+            letter-spacing: 3px;
+        }
+        img{
+                width: 90px;
+                height: 90px;
+                /*border-radius: 50%;*/
+                /*clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);*/
+                clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 
+                100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+        }
+        /*.grid {
+              display: grid;
+              grid-template-columns: repeat(3, 200px);
+              grid-template-rows: repeat(2, 100px);
+              gap: 10px;
+            }
+          
+            .item {
+              background: deeppink;
+        }*/
+        .artist {
+            display: grid;
+            grid-template-columns: repeat(3, 200px);
+            grid-template-rows: repeat(3, 100px);
+            gap: 10px;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .item {
+            text-align: center;
+            font-weight: bolder;
+            -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+            /*background: deeppink;*/
+        }
+        ::-webkit-scrollbar{
+            width: 25px;
+        }
+        ::-webkit-scrollbar-track{
+            border-image: linear-gradient(to right,#6C63FF, #F8A4D8) 1;
+            box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5)
+        }
+        ::-webkit-scrollbar-thumb{
+            border: 2px solid transparent;
+            border-image: linear-gradient(to right,#6C63FF, #F8A4D8) 1;
+        }
+        .list{
+            height: 400px;
+            overflow: auto;
+        }
+        .all{
+            height: 600px;
+            overflow: auto;
+        }
+        .footer{
+            clear: both;
+            padding : 10px;
+        }
+
+        .footer h4{
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 2px solid #eeeeee; color: #eeeeee;
+        }
+
+    </style>
+    <body>
+        <br>
+        <div class="header">
+            <h1>Generaciones en el kpop</h1>
+        </div>
+        <br><br>
+        <div class="all">
+            <div class="content">
+                <div class="title">
+                    <h2 class="g1">Primera generación</h2>
+                    <div class="sub">
+                        <h3>Las leyendas</h3>
+                        <h4>1990 - 2000</h4>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi assumenda reiciendis 
+                        eligendi repellendus fugiat vitae. Rem, minima. Tenetur nihil repellendus quia, ducimus 
+                        laboriosam quis maiores magnam temporibus praesentium id vitae, unde magni provident sunt 
+                        enim labore vero eum laborum neque eos laudantium! Quod cum ipsa, vitae laboriosam deserunt 
+                        recusandae suscipit quisquam ducimus vel. Veritatis necessitatibus libero aliquid possimus 
+                        incidunt sunt placeat delectus, molestiae et rem animi? Cumque sapiente inventore alias iste 
+                        voluptatem. Quos hic quae nisi assumenda, ipsa ipsum, labore totam maiores voluptates, nesciunt 
+                        sapiente. Recusandae autem blanditiis odit.
+                    </p>
+                    <br>
+                    <div class="artist">
+                        <div class="item item-1">Seo Taji and The Boys</div>
+                        <div class="item item-2">S.E.S</div>
+                        <div class="item item-3">SHINHWA</div>
+
+                        <div class="item item-4">
+                            <img src="https://i.scdn.co/image/ab6761610000e5ebbdbf1cba523a3a63a11280ab">
+                        </div>
+                        <div class="item item-5">
+                            <img src="https://cdn.dealbada.com/data/editor/1909/6e700d8c95e682a9b90d93e7824bf982_1567916545_7291.jpg">
+                        </div>
+                        <div class="item item-6">
+                            <img src="https://idata.over-blog.com/0/09/68/04/85-x.JPG">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h2 class="g2">Segunda generación</h2>
+                    <div class="sub">
+                        <h3>Los Pavimentadores</h3>
+                        <h4>2001 - 2012</h4>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi assumenda reiciendis 
+                        eligendi repellendus fugiat vitae. Rem, minima. Tenetur nihil repellendus quia, ducimus 
+                        laboriosam quis maiores magnam temporibus praesentium id vitae, unde magni provident sunt 
+                        enim labore vero eum laborum neque eos laudantium! Quod cum ipsa, vitae laboriosam deserunt 
+                        recusandae suscipit quisquam ducimus vel. Veritatis necessitatibus libero aliquid possimus 
+                        incidunt sunt placeat delectus, molestiae et rem animi? Cumque sapiente inventore alias iste 
+                        voluptatem. Quos hic quae nisi assumenda, ipsa ipsum, labore totam maiores voluptates, nesciunt 
+                        sapiente. Recusandae autem blanditiis odit.
+                    </p>
+                    <br>
+                    <div class="artist">
+                        <div class="item item-1">BIGBANG</div>
+                        <div class="item item-2">Girls Generation</div>
+                        <div class="item item-3">Wonder Girls</div>
+                        <div class="item item-4">
+                            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS4CC85LyWB4c_n2qf7jt_AfGn8hQjs3k5Ms-LFuw2C9P34iRU4">
+                        </div>
+                        <div class="item item-5">
+                            <img src="https://i1.sndcdn.com/artworks-000078733418-fs7knv-t500x500.jpg">
+                        </div>
+                        <div class="item item-6">
+                            <img src="https://i.scdn.co/image/ab67616d0000b273bb14f2649bc267caefaadb39">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h2 class="g3">Tercera generación</h2>
+                    <div class="sub">
+                        <h3>Los Icónos</h3>
+                        <h4>2013 - 2018</h4>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi assumenda reiciendis 
+                        eligendi repellendus fugiat vitae. Rem, minima. Tenetur nihil repellendus quia, ducimus 
+                        laboriosam quis maiores magnam temporibus praesentium id vitae, unde magni provident sunt 
+                        enim labore vero eum laborum neque eos laudantium! Quod cum ipsa, vitae laboriosam deserunt 
+                        recusandae suscipit quisquam ducimus vel. Veritatis necessitatibus libero aliquid possimus 
+                        incidunt sunt placeat delectus, molestiae et rem animi? Cumque sapiente inventore alias iste 
+                        voluptatem. Quos hic quae nisi assumenda, ipsa ipsum, labore totam maiores voluptates, nesciunt 
+                        sapiente. Recusandae autem blanditiis odit.
+                    </p>
+                    <br>
+                    <div class="artist">
+                        <div class="item item-1">BTS</div>
+                        <div class="item item-2">Twice</div>
+                        <div class="item item-3">EXO</div>
+                        <div class="item item-4">
+                            <img src="https://wallpaperaccess.com/full/1557974.jpg">
+                        </div>
+                        <div class="item item-5">
+                            <img src="https://i1.sndcdn.com/artworks-000162168565-82u4x3-t500x500.jpg">
+                        </div>
+                        <div class="item item-6">
+                            <img src="https://i1.sndcdn.com/artworks-000056565014-2o28jp-t500x500.jpg">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="title">
+                    <h2 class="g4">Cuarta generación</h2>
+                    <div class="sub">
+                        <h3>Los Globales</h3>
+                        <h4>2019 - 2022</h4>
+                    </div>
+                </div>
+                <div class="description">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nisi assumenda reiciendis 
+                        eligendi repellendus fugiat vitae. Rem, minima. Tenetur nihil repellendus quia, ducimus 
+                        laboriosam quis maiores magnam temporibus praesentium id vitae, unde magni provident sunt 
+                        enim labore vero eum laborum neque eos laudantium! Quod cum ipsa, vitae laboriosam deserunt 
+                        recusandae suscipit quisquam ducimus vel. Veritatis necessitatibus libero aliquid possimus 
+                        incidunt sunt placeat delectus, molestiae et rem animi? Cumque sapiente inventore alias iste 
+                        voluptatem. Quos hic quae nisi assumenda, ipsa ipsum, labore totam maiores voluptates, nesciunt 
+                        sapiente. Recusandae autem blanditiis odit.
+                    </p>
+                    <br>
+                    <div class="artist">
+                        <div class="item item-1">ITZY</div>
+                        <div class="item item-2">TXT</div>
+                        <div class="item item-3">LOONA</div>
+                        <div class="item item-4">
+                            <img src="https://pbs.twimg.com/media/Ed2sWjrUEAA0PI4.jpg">
+                        </div>
+                        <div class="item item-5">
+                            <img src="https://pbs.twimg.com/media/D00dDvDV4AEQ1Is.jpg">
+                        </div>
+                        <div class="item item-6">
+                            <img src="https://akamai.sscdn.co/uploadfile/letras/fotos/1/4/0/b/140bfcca76325e621e62fa6156d96796.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="title">
+                    <h2 class="g1">Albumnes recomendados</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Elemento 0</li>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                        <li>Elemento 6</li>
+                        <li>Elemento 7</li>
+                        <li>Elemento 8</li>
+                        <li>Elemento 9</li>
+                        <li>Elemento 10</li>
+                        <li>Elemento 11</li>
+                        <li>Elemento 12</li>
+                        <li>Elemento 13</li>
+                        <li>Elemento 14</li>
+                        <li>Elemento 15</li>
+                        <li>Elemento 16</li>
+                        <li>Elemento 17</li>
+                        <li>Elemento 18</li>
+                        <li>Elemento 19</li>
+                        <li>Elemento 20</li>
+                        <li>Elemento 21</li>
+                        <li>Elemento 22</li>
+                        <li>Elemento 23</li>
+                        <li>Elemento 24</li>
+                        <li>Elemento 25</li>
+                        <li>Elemento 26</li>
+                        <li>Elemento 27</li>
+                        <li>Elemento 28</li>
+                        <li>Elemento 29</li>
+                    </ul>
+                </div>
+                <br><br><br><br>
+                <div class="title">
+                    <h2 class="g2">Albumnes recomendados</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Elemento 0</li>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                        <li>Elemento 6</li>
+                        <li>Elemento 7</li>
+                        <li>Elemento 8</li>
+                        <li>Elemento 9</li>
+                        <li>Elemento 10</li>
+                        <li>Elemento 11</li>
+                        <li>Elemento 12</li>
+                        <li>Elemento 13</li>
+                        <li>Elemento 14</li>
+                        <li>Elemento 15</li>
+                        <li>Elemento 16</li>
+                        <li>Elemento 17</li>
+                        <li>Elemento 18</li>
+                        <li>Elemento 19</li>
+                        <li>Elemento 20</li>
+                        <li>Elemento 21</li>
+                        <li>Elemento 22</li>
+                        <li>Elemento 23</li>
+                        <li>Elemento 24</li>
+                        <li>Elemento 25</li>
+                        <li>Elemento 26</li>
+                        <li>Elemento 27</li>
+                        <li>Elemento 28</li>
+                        <li>Elemento 29</li>
+                    </ul>
+                </div>
+                <br><br><br><br>
+                <div class="title">
+                    <h2 class="g3">Albumnes recomendados</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Elemento 0</li>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                        <li>Elemento 6</li>
+                        <li>Elemento 7</li>
+                        <li>Elemento 8</li>
+                        <li>Elemento 9</li>
+                        <li>Elemento 10</li>
+                        <li>Elemento 11</li>
+                        <li>Elemento 12</li>
+                        <li>Elemento 13</li>
+                        <li>Elemento 14</li>
+                        <li>Elemento 15</li>
+                        <li>Elemento 16</li>
+                        <li>Elemento 17</li>
+                        <li>Elemento 18</li>
+                        <li>Elemento 19</li>
+                        <li>Elemento 20</li>
+                        <li>Elemento 21</li>
+                        <li>Elemento 22</li>
+                        <li>Elemento 23</li>
+                        <li>Elemento 24</li>
+                        <li>Elemento 25</li>
+                        <li>Elemento 26</li>
+                        <li>Elemento 27</li>
+                        <li>Elemento 28</li>
+                        <li>Elemento 29</li>
+                    </ul>
+                </div>
+                <br><br><br><br><br>
+                <div class="title">
+                    <h2 class="g4">Albumnes recomendados</h2>
+                </div>
+                <div class="list">
+                    <ul>
+                        <li>Elemento 0</li>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <li>Elemento 4</li>
+                        <li>Elemento 5</li>
+                        <li>Elemento 6</li>
+                        <li>Elemento 7</li>
+                        <li>Elemento 8</li>
+                        <li>Elemento 9</li>
+                        <li>Elemento 10</li>
+                        <li>Elemento 11</li>
+                        <li>Elemento 12</li>
+                        <li>Elemento 13</li>
+                        <li>Elemento 14</li>
+                        <li>Elemento 15</li>
+                        <li>Elemento 16</li>
+                        <li>Elemento 17</li>
+                        <li>Elemento 18</li>
+                        <li>Elemento 19</li>
+                        <li>Elemento 20</li>
+                        <li>Elemento 21</li>
+                        <li>Elemento 22</li>
+                        <li>Elemento 23</li>
+                        <li>Elemento 24</li>
+                        <li>Elemento 25</li>
+                        <li>Elemento 26</li>
+                        <li>Elemento 27</li>
+                        <li>Elemento 28</li>
+                        <li>Elemento 29</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <br><br><br>
+            <h4>Autora: Nereida V. Roldán León</h4>
+            <h4>
+                ....................................................................................................................................
+            </h4>
+            <br><br><bR>
+        </div>
+    </body>
+</html>

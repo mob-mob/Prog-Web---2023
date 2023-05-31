@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scare=1.0">
+        <title>Practica CSS - Bordes</title>
+    </head>
+    <style>
+        body {
+            font-family: monospace;
+            color: #eeeeee;
+
+            background: -webkit-linear-gradient(90deg, #212121 10%, #333333 90%);
+            background:    -moz-linear-gradient(90deg, #212121 10%, #333333 90%);
+            background:     -ms-linear-gradient(90deg, #212121 10%, #333333 90%);
+            background:      -o-linear-gradient(90deg, #212121 10%, #333333 90%);
+            background:         linear-gradient(90deg, #212121 10%, #333333 90%);
+        }
+
+        div {
+            margin: 15px;
+            padding: 1vw;
+            z-index: 1;
+            position: relative;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 30px;
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: #eeeeee;
+            
+            border: 5px;
+            text-align: center;
+            width: 100%;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 30px;
+            
+            background: -webkit-linear-gradient(90deg, #76448A 10%, #CE5D84 90%);
+            background:    -moz-linear-gradient(90deg, #76448A 10%, #CE5D84 90%);
+            background:     -ms-linear-gradient(90deg, #76448A 10%, #CE5D84 90%);
+            background:      -o-linear-gradient(90deg, #76448A 10%, #CE5D84 90%);
+            background:         linear-gradient(90deg, #76448A 10%, #CE5D84 90%);
+        }
+
+        .dotted {
+            border: dotted #BB8FCE;
+            padding: 10px;
+        }
+        .dashed {
+            border: dashed #DF8DD4;
+            padding: 10px;
+        }
+        .solid {
+            border: solid #F293B4;
+            padding: 10px;
+        }
+        .double {
+            border: double #BB8FCE;
+            padding: 10px;
+        }
+        .groove {
+            border: groove #DF8DD4;
+            padding: 10px;
+        }
+        .ridge {
+            border: ridge #F293B4;
+            padding: 10px;
+        }
+        .inset {
+            border: inset #BB8FCE;
+            padding: 10px;
+        }
+        .outset {
+            border: outset #DF8DD4;
+            padding: 10px;
+        }
+        .none {
+            border: none #F293B4;
+            padding: 10px;
+        }
+        .hidden {
+            border: hidden #BB8FCE;
+            padding: 10px;
+        }
+        .mix-1 {
+            border-style: dotted dashed solid double;
+            border-color: #DF8DD4;
+            padding: 10px;
+        }
+        .medium{
+            border: medium solid #F293B4;
+            padding: 10px;
+        }
+        .thin{
+            border: thin solid #BB8FCE;
+            padding: 10px;
+        }
+        .thick{
+            border: thick solid #DF8DD4;
+            padding: 10px;
+        }
+        .pixel{
+            border: 2px solid #F293B4;
+            padding: 10px;
+        }
+        .top-bottom{
+            border-style: solid; border-width: 6px 2px;
+            border-color: #BB8FCE;
+            padding: 10px;
+        }
+        .right-left{
+            border-style: solid; border-width: 2px 6px;
+            border-color: #DF8DD4;
+            padding: 10px;
+        }
+        .three{
+            border-style: solid; border-width: 2px 4px 6px;
+            border-color: #F293B4;
+            padding: 10px;
+        }
+        .for{
+            border-style: solid; border-width: 1px 2px 3px 4px;
+            border-color: #BB8FCE;
+            padding: 10px;
+        }
+        .color-1{
+            border: thick solid #DF8DD4;
+            padding: 10px;
+        }
+        .color-2{
+            border: thick solid;
+            border-color: #F293B4 #968DDF;
+            padding: 10px;
+        }
+        .color-3{
+            border: thick solid;
+            border-color: #BB8FCE #F293B4 #968DDF;
+            padding: 10px;
+        }
+        .color-4{
+            border: thick solid; border-color: #BB8FCE #F293B4 #968DDF #DF8DD4;
+            padding: 10px;
+        }
+        .mix-2{
+            border-top: dotted #F293B4;
+            border-right: solid #DF8DD4;
+            border-bottom: dotted #BB8FCE;
+            border-left: solid #968DDF;
+            padding: 10px;
+        }
+        .radius{
+            border: thick double;
+            border-color: #F293B4 #DF8DD4 #BB8FCE;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        .mix-3{
+            border-top: thin solid #BB8FCE;
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+            border-bottom: thin solid #F293B4;
+            border-right: thin solid #DF8DD4;
+            border-left: #968DDF;
+            padding: 10px;
+        }
+        .mix-4{
+            border-top: thin solid #BB8FCE;
+            border-bottom: thin solid #F293B4;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-right: thin solid #DF8DD4;
+            border-left: #968DDF;
+            padding: 10px;
+        }
+        .mix-5{
+            border-top: thin solid #BB8FCE;
+            border-top-left-radius: 15px;
+            border-bottom: thin solid #F293B4;
+            border-bottom-right-radius: 15px;
+            border-right: thin solid #DF8DD4;
+            border-left: #968DDF;
+            padding: 10px;
+        }
+        .mix-6{
+            border-top: thin solid #BB8FCE;
+            border-top-right-radius: 15px;
+            border-bottom: thin solid #F293B4;
+            border-bottom-left-radius: 15px;
+            border-right: thin solid #DF8DD4;
+            border-left: #968DDF;
+            padding: 10px;
+        }
+        .image-1{
+            border: 10px solid;
+            border-image: url('https://w0.peakpx.com/wallpaper/476/534/HD-wallpaper-violet-flowers-lilac-flowerbed-blossom-flowers.jpg') 30;
+            padding: 10px;
+        }
+        .image-2{
+            border: 10px solid;
+            border-image: url('https://img.freepik.com/fotos-premium/imagen-macro-flores-violetas-lilas-primavera-abstracto-fondo-floral-suave-patron-costuras_379823-3151.jpg') 30 / 19px round;
+            padding: 10px;
+        }
+        .image-3{
+            border: 10px solid;
+            border-image: url('https://watermark.lovepik.com/photo/20211209/large/lovepik-spring-violet-flowers-picture_501721144.jpg') 30 fill / 30px / 30px space;
+            padding: 10px;
+        }
+        .gradient-1{
+            border: 10px solid;
+            border-image: linear-gradient(90deg, #76448A 10%, #CE5D84 90%);
+            padding: 10px;
+        }
+        .gradient-2{
+            border: 10px solid;
+            border-image: linear-gradient(#CE5D84, #76448A) 30;
+            padding: 10px;
+        }
+        .gradient-3{
+            border: 10px solid;
+            border-image: repeating-linear-gradient(30deg, #CE5D84, #76448A, #CE5D84 20px) 60;
+            padding: 10px;
+        }
+    </style>
+    <body>
+        <div>
+            <h3> Frases para el 8M </h3><br>
+            <p class="dotted"> ¡Quiero morir de vieja! No por ser vieja. </p><br>
+            <p class="dashed"> No nací mujer para morir por ello. </p><br>
+            <p class="solid"> Algo va mal si odian más a las feministas que a los VIOLADORES. </p><br>
+            <p class="double"> El porno es propaganda de odio contra las mujeres. </p><br>
+            <p class="groove"> A mí también me gustan las mujeres y no las acoso. </p><br>
+            <p class="ridge"> Estar de suerte es estar “VIVA”. </p><br>
+            <p class="inset"> Protesto porque estoy viva y no sé hasta cuando. </p><br>
+            <p class="outset"> Ninguna es libre hasta que todas los seamos. </p><br>
+            <p class="none"> VIVAS Y LIBRES NOS QUEREMOS. </p><br>
+            <p class="hidden"> Hoy no están todas nuestras voces porque desde la tumba no se puede gritar. </p><br>
+            <p class="mix-1"> Te prefiero violenta que violada y muerta.  </p><br>
+            <p class="medium"> Felíz va a ser el día que no falte ninguna. </p><br>
+            <p class="thin"> Estar viva no debería ser un LOGRO. </p><br>
+            <p class="thick"> Quiero vivir, no “sobrevivir”. </p><br>
+            <p class="pixel"> Calladita NO ME VEO. </p><br>
+            <p class="top-bottom"> Disculpen las molestias, pero nos están asesinando. </p><br>
+            <p class="right-left"> En la calle no quiero ser valiente, quiero ser libre. </p><br>
+            <p class="three"> Mi cuerpo es mi casa y en mi casa mando yo. </p><br>
+            <p class="for"> Agradezcan que queremos justicia, no venganza. </p><br>
+            <p class="color-1"> No somos histéricas, somos históricas.  </p><br>
+            <p class="color-2"> No estás sola. </p><br>
+            <p class="color-3"> Nos quitaron tanto que nos quitaron el miedo. </p><br>
+            <p class="color-4"> Nunca van a tener la comodidad de nuestro silencio otra vez. </p><br>
+            <p class="mix-2"> Libres, poderosas, vivas y sin miedo. </p><br>
+            <p class="radius"> No veas “putas” donde hay mujeres libres. </p><br>
+            <p class="mix-3"> NO ES NO. </p><br>
+            <p class="mix-4"> Las niñas NO se tocan, NO se violan, NO se matan. </p><br>
+            <p class="mix-5"> Vivas nos queremos. </p><br>
+            <p class="mix-6"> Yo sí te creo. </p><br>
+            <p class="image-1"> Mi miedo terminó, mi coraje ganó. </p><br>
+            <p class="image-2"> Nací para vivir, no para sobrevivir. </p><br><br>
+            <p class="image-3"> Mujer, hermana, si te pega no te ama. </p><br><br>
+            <p class="gradient-1"> Yo me visto para mí, no para ti. </p><br>
+            <p class="gradient-2"> Nunca te disculpes por ser una mujer poderosa. </p><br>
+            <p class="gradient-3"> No quiero que me cuides, quiero que me respetes. </p><br>
+            <p class="">  </p><br>
+        </div>
+    </body>
+</html>

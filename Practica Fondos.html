@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scare=1.0">
+        <title>Practica CSS - Fondos</title>
+    </head>
+    <style>
+      body {
+      background: -webkit-linear-gradient(90deg, #212121 10%, #333333 90%);
+      background:    -moz-linear-gradient(90deg, #212121 10%, #333333 90%);
+      background:     -ms-linear-gradient(90deg, #212121 10%, #333333 90%);
+      background:      -o-linear-gradient(90deg, #212121 10%, #333333 90%);
+      background:         linear-gradient(90deg, #212121 10%, #333333 90%);
+      }
+
+      div {
+      font-family: Arial;
+      height: auto;
+      max-width: calc(100vw - 30px);
+      margin: 15px;
+      padding: 10vw;
+      z-index: 1;
+      position: relative;
+      text-align: center;
+      }
+
+      p {
+      font-size: 18px;
+      font-size: 1rem;
+      color: #eeeeee;
+      max-width: 700px;
+      line-height: 1.5;
+      }
+
+      h1 {
+      font-size: 30px;
+      font-weight:900;
+      font-size: 2rem;
+      color: #eeeeee;
+      max-width: 700px;
+      line-height: 1.5;
+      
+      border: 5px;
+      text-align: center;
+      width: 700px;
+      border-radius: 25px;
+
+      
+      background: -webkit-linear-gradient(90deg, #212121 10%, #333333 90%);
+      background:    -moz-linear-gradient(90deg, #212121 10%, #333333 90%);
+      background:     -ms-linear-gradient(90deg, #212121 10%, #333333 90%);
+      background:      -o-linear-gradient(90deg, #212121 10%, #333333 90%);
+      background:         linear-gradient(90deg, #212121 10%, #333333 90%);
+      }
+
+      .contenedor {
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-align-content: space-around;
+      -ms-flex-line-pack: distribute;
+      align-content: space-around;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      }
+
+      .elemento {
+      -webkit-order: 0;
+      -ms-flex-order: 0;
+      order: 0;
+      -webkit-flex: 0 1 auto;
+      -ms-flex: 0 1 auto;
+      flex: 0 1 auto;
+      -webkit-align-self: auto;
+      -ms-flex-item-align: auto;
+      align-self: auto;
+      }
+
+      /* Fondos */
+      .fondo-1 {
+      background: -webkit-linear-gradient(90deg, #e74d6b 10%, #65997d 90%);
+      background:    -moz-linear-gradient(90deg, #e74d6b 10%, #65997d 90%);
+      background:     -ms-linear-gradient(90deg, #e74d6b 10%, #65997d 90%);
+      background:      -o-linear-gradient(90deg, #e74d6b 10%, #65997d 90%);
+      background:         linear-gradient(90deg, #e74d6b 10%, #65997d 90%);
+      }
+      .fondo-2 {
+      background: url("https://i.pinimg.com/originals/92/af/94/92af94f82ea96bb10c17d3c4136a754b.gif");
+      }
+      .fondo-3{ /*78, 227, 147*/
+        background: 
+        linear-gradient(217deg,rgba(105, 175, 221, 0.8),rgba(105, 175, 221, 0) 70.71%), 
+        linear-gradient(127deg, rgba(227, 116, 154, 0.8), rgba(227, 116, 154, 0) 70.71%),
+        linear-gradient(336deg, rgba(187, 108, 221, 0.8), rgba(187, 108, 221, 0) 70.71%);
+      }
+      .fondo-4 {
+      background-image: url("https://f8n-production.s3.amazonaws.com/creators/profile/nprhx6w5y-bannerferris-gif-7z58xh.gif")
+      }
+      .fondo-5 {
+        background-color: #17202A;
+      }
+      .fondo-6 {
+        background: none;
+      }
+    </style>
+    <body>
+      <div class="seleccion contenedor fondo-1">
+        <h1 class="elemento">Fondo 1</h1>
+        <p class="elemento">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis est consectetur suscipit similique assumenda. Dicta quasi dolores molestiae veritatis non. Maxime atque repellat autem, eum deleniti doloremque doloribus aliquid amet?</p>
+      </div>
+      <div class="seleccion contenedor fondo-2">
+        <h1 class="elemento">Fondo 2</h1>
+        <p class="elemento">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugit suscipit minima nostrum quae rem adipisci impedit! Minus architecto perspiciatis consectetur. Similique earum eos quis tempora consectetur expedita eaque magnam?</p>
+      </div>
+      <div class="seleccion contenedor fondo-3">
+        <h1 class="elemento">Fondo 3</h1>
+        <p class="elemento">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores eveniet, eum harum cupiditate cumque a minima vitae, eius saepe, vel ratione quos adipisci exercitationem blanditiis voluptatum aspernatur suscipit quibusdam quas?</p>
+      </div>  
+      <div class="seleccion contenedor fondo-4">
+        <h1 class="elemento">Fondo 4</h1>
+        <p class="elemento">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius totam saepe aperiam atque neque tempore, aspernatur expedita impedit ullam eligendi similique, laboriosam eos cupiditate exercitationem! Voluptates vitae eligendi consequatur dicta?</p>
+      </div>  
+      <div class="seleccion contenedor fondo-5">
+        <h1 class="elemento">Fondo 5</h1>
+        <p class="elemento">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro minima facilis quasi. Ad necessitatibus maiores iure quod eveniet id nemo praesentium ab. Rerum, dolorem et. Eius id quia soluta nulla?</p>
+      </div> 
+      <div class="seleccion contenedor fondo-6">
+        <h1 class="elemento">Fondo 6</h1>
+        <p class="elemento">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit aut dolores sunt quibusdam numquam architecto dolorem reiciendis dolor officia vitae eveniet ipsam veritatis dolore itaque adipisci maxime, laudantium corrupti commodi!</p>
+      </div> 
+    </body>
+</html>

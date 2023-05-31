@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scare=1.0">
+        <title>Practica CSS - Unidades de Medida</title>
+    </head>
+    <style>
+        body {
+            font-family: "Arial Black";
+            color: #eeeeee;
+            background: -webkit-linear-gradient(90deg, #212121 10%, #333333 90%);
+            background:    -moz-linear-gradient(90deg, #212121 10%, #333333 90%);
+            background:     -ms-linear-gradient(90deg, #212121 10%, #333333 90%);
+            background:      -o-linear-gradient(90deg, #212121 10%, #333333 90%);
+            background:         linear-gradient(90deg, #212121 10%, #333333 90%);
+        }
+
+        h3{
+            font-size: 36px;
+        }
+
+        section{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            text-align: center;
+        }
+
+        article{
+            width: 3in; height: 3in;
+            font-size: 24px;
+            color: #212121;
+            font-weight: bold;
+        }
+
+        .item1{
+            background-color: #F230AA;
+            border: thin solid #D62B96;
+            padding: 1rem;
+        }
+        .item2{
+            background-color: #CCf656;
+            border: thin solid #A8CA47;
+            padding: 1rem;
+        }
+        .item3{
+            background-color: #7B5FFF;
+            border: thin solid #6850D7;
+            padding: 1rem;
+        }
+
+        div{
+            background-color: #212121;
+        }
+
+        .med1{ width: 1in; height: 1in; }
+        .med2{ width: 1cm; height: 1cm; }
+        .med3{ width: 1mm; height: 1mm; }
+        .med4{ width: 1pt; height: 1pt; }
+        .med5{ width: 1pc; height: 1pc; }
+        .med6{ width: 1em; height: 1em; }
+        .med7{ width: 1ex; height: 1ex; }
+        .med8{ width: 1rem; height: 1rem; }
+        .med9{ width: 1px; height: 1px; }
+        .med10{ width: 1vw; height: 1vw; }
+        .med11{ width: 1vh; height: 1vh; }
+        .med12{ width: 1vmin; height: 1vmin; }
+        .med13{ width: 1vmax; height: 1vmax; }
+        .med14{ width: 1%; height: 1%; }
+
+    </style>
+    <body>
+        <h3>Diferentes unidades de medida</h3>
+        <section>
+            <article class="item1">
+                Pulgada (In)
+                <br><br><br> <div class="med1"></div>     
+            </article>
+            <article class="item2">
+                Centimetro (cm)
+                <br><br><br> <div class="med2"></div>     
+            </article>
+            <article class="item3">
+                Milimetro (mm)
+                <br><br><br> <div class="med3"></div>
+            </article>
+            <article class="item1">
+                Punto (pt)
+                <br><br><br> <div class="med4"></div>
+            </article>
+            <article class="item2">
+                Pica (pc)
+                <br><br><br> <div class="med5"></div>
+            </article>
+            <article class="item3">
+                Relativo (em)
+                <br><br><br> <div class="med6"></div>
+            </article>
+            <article class="item1">
+                Relativo (ex)
+                <br><br><br> <div class="med7"></div>
+            </article>
+            <article class="item2">
+                Relativo (rem)
+                <br><br><br> <div class="med8"></div>
+            </article>
+            <article class="item3">
+                Relativo (px)
+                <br><br><br> <div class="med9"></div>
+            </article>
+            <article class="item1">
+                Viewport (vw)
+                <br><br><br> <div class="med10"></div>
+            </article>
+            <article class="item2">
+                Viewport (vh)
+                <br><br><br> <div class="med11"></div>
+            </article>
+            <article class="item3">
+                Viewport (vmin)
+                <br><br><br> <div class="med12"></div>
+            </article>
+            <article class="item1">
+                Viewport (vmax)
+                <br><br><br> <div class="med13"></div>
+            </article>
+            <article class="item2">
+                Porcentaje
+                <br><br><br> <div class="med14"></div>
+            </article>
+        </section>
+    </body>
+</html>
